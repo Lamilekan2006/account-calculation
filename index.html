@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200;0,300;0,400;0,500;0,600;0,700;0,800;&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/d132f789d3.js" crossorigin="anonymous"></script>
+<script src="./script.js" defer></script>
 
 </head>
 <body>
@@ -25,21 +26,21 @@
                             <div class="sign">
                                 <i class="fa-duotone fa-solid fa-sterling-sign fa-lg"></i> 
                             </div>    
-                            <input class="sign-2" type="text"> 
+                            <input class="sign-2" type="number"> 
                     </div>
                     <div class="paragraph-1">
                             <div  class="content">
                                 <h3>Mortgage term</h3>
                                     <div class="column">
-                                        <input class="desk" type="text">
-                                        <div class="column-1">Years</div>
+                                        <input class="desk" id="Years" type="number">
+                                        <div class="column-1" >Years</div>
                                     </div>
                             </div>
                             <div class="content-1">
                                 <h3>Interest Rate</h3>
                                     <div class="column">
-                                        <input class="desk" type="text">
-                                        <div class="column-1">%</div>
+                                        <input class="desk"  id="Rate" type="number">
+                                        <div class="column-1" >%</div>
                                     </div>
                             </div>
                     </div>
@@ -47,22 +48,22 @@
                         <h3>Mortgage Type</h3>
                         <div class="column-2">
                             <div class="column-3">
-                                <i class="fa-solid fa-o fa-sm"></i><h4>Repayment</h4>
+                                <h4> <input type="radio">Repayment</h4>
                             </div>
                         </div>
                         <div class="column-2">
                             <div class="column-3">
-                                <h4>  <i class="fa-solid fa-o fa-sm"></i>Interest Only</h4>
+                                <h4> <input type="radio">Interest Only</h4>
                             </div>
                         </div>
-                        <button> <i class="fa-solid fa-calculator fa-lg"></i> Calculate repayment</button>
+                        <button id="Calculate"> <i class="fa-solid fa-calculator fa-lg"></i> Calculate repayment</button>
                     </div>
                 </div>
             </div>
                 <div class="box-2">
                     <div class="box-3">
                         <img src="mor.avif" alt="">
-                        <h1>Result Shown here </h1>
+                        <h1 id="output">Result Shown here </h1>
                         <p>Complete the form and click "Calculate payment" to see what's your monthly repayment will be.</p>
                     </div>
                 </div>    
